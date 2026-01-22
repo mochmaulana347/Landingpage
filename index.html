@@ -3,84 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Link Toko Pro - Virtue Dev</title>
+    <title>Landing - Happy Hues Style</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Plus Jakarta Sans', sans-serif; }
-        .btn-link { transition: all 0.2s ease-in-out; }
-        .btn-link:hover { transform: scale(1.02); }
+        /* Konsep Happy Hues: Background, Headline, Paragraph, Button, Button Text */
+        :root {
+            --bg-color: #f2f7f5;      /* Background utama */
+            --headline: #00473e;      /* Warna judul */
+            --paragraph: #475d5b;     /* Warna teks isi */
+            --button: #faae2b;        /* Warna tombol utama (Action) */
+            --button-text: #00473e;   /* Warna teks di dalam tombol */
+            --secondary: #ffa8ba;     /* Warna aksen tambahan */
+        }
+        body { 
+            font-family: 'Plus Jakarta Sans', sans-serif; 
+            background-color: var(--bg-color);
+            color: var(--paragraph);
+        }
+        .card-shadow { box-shadow: 8px 8px 0px 0px rgba(0,71,62,1); }
+        .btn-hover:hover { transform: translate(-2px, -2px); box-shadow: 10px 10px 0px 0px rgba(0,71,62,1); transition: 0.2s; }
     </style>
 </head>
-<body class="bg-[#F3F4F6] min-h-screen flex items-center justify-center p-4">
+<body class="min-h-screen flex items-center justify-center p-6">
 
-    <div class="max-w-md w-full bg-white rounded-[3rem] shadow-2xl overflow-hidden border-[12px] border-white">
+    <div class="max-w-md w-full">
         
-        <div class="relative h-40 bg-gradient-to-tr from-blue-600 to-indigo-500">
-            <div class="absolute -bottom-12 left-1/2 -translate-x-1/2">
-                <div class="w-24 h-24 bg-white rounded-full p-1 shadow-lg">
-                    <img src="https://images.unsplash.com/photo-1541963463532-d68292c34b19?q=80&w=200&h=200&auto=format&fit=crop" class="w-full h-full rounded-full object-cover" alt="Logo Toko">
+        <div class="text-center mb-10">
+            <div class="relative inline-block">
+                <div class="w-28 h-28 bg-[#ffa8ba] rounded-full border-4 border-[#00473e] overflow-hidden mx-auto">
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=200&h=200&auto=format&fit=crop" class="w-full h-full object-cover" alt="Profile">
+                </div>
+                <div class="absolute -bottom-2 -right-2 bg-[#faae2b] border-2 border-[#00473e] p-2 rounded-lg rotate-12">
+                    <span class="text-[10px] font-black text-[#00473e]">OFFICIAL</span>
                 </div>
             </div>
+            <h1 class="text-3xl font-black mt-6 tracking-tight text-[#00473e]">Nama Brand Pro.</h1>
+            <p class="mt-2 font-medium opacity-80">Solusi kebutuhan harianmu dengan kualitas nomor satu. 🌿</p>
         </div>
 
-        <div class="pt-16 pb-8 px-8 text-center">
-            <h1 class="text-2xl font-black tracking-tight text-slate-800">Toko Berkah Utama ✨</h1>
-            <p class="text-slate-500 text-sm mt-2 leading-relaxed font-medium">
-                Penyedia Perlengkapan Rumah Tangga Berkualitas. <br> Pilih platform belanja favorit kamu di bawah ini:
-            </p>
-        </div>
-
-        <div class="px-6 pb-10 space-y-4">
+        <div class="space-y-5">
             
-            <a href="#" class="btn-link flex items-center p-4 bg-[#EE4D2D] text-white rounded-2xl shadow-md hover:shadow-orange-200">
-                <div class="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center">
-                    <span class="font-bold">S</span>
+            <a href="#" class="btn-hover block w-full bg-[#faae2b] border-4 border-[#00473e] p-5 rounded-2xl flex items-center justify-between group transition-all">
+                <div class="flex items-center gap-4">
+                    <div class="w-10 h-10 bg-white border-2 border-[#00473e] rounded-full flex items-center justify-center font-black">S</div>
+                    <span class="font-extrabold text-[#00473e] text-lg italic">Shopee Mall</span>
                 </div>
-                <div class="ml-4 text-left">
-                    <p class="font-extrabold text-sm leading-none">Shopee Indonesia</p>
-                    <p class="text-[10px] opacity-80 mt-1">Diskon s/d 50% & Gratis Ongkir</p>
-                </div>
-                <div class="ml-auto opacity-50">➜</div>
+                <span class="font-black text-[#00473e]">→</span>
             </a>
 
-            <a href="#" class="btn-link flex items-center p-4 bg-[#03AC0E] text-white rounded-2xl shadow-md hover:shadow-green-200">
-                <div class="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center">
-                    <span class="font-bold">T</span>
+            <a href="#" class="btn-hover block w-full bg-white border-4 border-[#00473e] p-5 rounded-2xl flex items-center justify-between group transition-all">
+                <div class="flex items-center gap-4">
+                    <div class="w-10 h-10 bg-[#00473e] border-2 border-[#00473e] rounded-full flex items-center justify-center font-black text-white">T</div>
+                    <span class="font-extrabold text-[#00473e] text-lg">Tokopedia Official</span>
                 </div>
-                <div class="ml-4 text-left">
-                    <p class="font-extrabold text-sm leading-none">Tokopedia</p>
-                    <p class="text-[10px] opacity-80 mt-1">Cicilan 0% & Cashback Menarik</p>
-                </div>
-                <div class="ml-auto opacity-50">➜</div>
+                <span class="font-black text-[#00473e]">→</span>
             </a>
 
-            <a href="#" class="btn-link flex items-center p-4 bg-black text-white rounded-2xl shadow-md">
-                <div class="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center">
-                    <span class="font-bold italic">d</span>
+            <a href="#" class="btn-hover block w-full bg-[#ffa8ba] border-4 border-[#00473e] p-5 rounded-2xl flex items-center justify-between group transition-all">
+                <div class="flex items-center gap-4">
+                    <div class="w-10 h-10 bg-white border-2 border-[#00473e] rounded-full flex items-center justify-center font-black">W</div>
+                    <span class="font-extrabold text-[#00473e] text-lg italic">Order via WA</span>
                 </div>
-                <div class="ml-4 text-left">
-                    <p class="font-extrabold text-sm leading-none">TikTok Shop</p>
-                    <p class="text-[10px] opacity-80 mt-1">Cek Live Streaming Kami</p>
-                </div>
-                <div class="ml-auto opacity-50">➜</div>
-            </a>
-
-            <a href="#" class="btn-link flex items-center p-4 bg-white border-2 border-slate-100 text-slate-700 rounded-2xl shadow-sm hover:border-blue-500">
-                <div class="w-10 h-10 bg-green-50 rounded-xl flex items-center justify-center">
-                    <span class="text-green-600 font-bold">W</span>
-                </div>
-                <div class="ml-4 text-left">
-                    <p class="font-extrabold text-sm leading-none text-slate-800">WhatsApp Admin</p>
-                    <p class="text-[10px] text-slate-400 mt-1">Tanya stok & custom order</p>
-                </div>
-                <div class="ml-auto text-slate-300">➜</div>
+                <span class="font-black text-[#00473e]">→</span>
             </a>
 
         </div>
 
-        <div class="pb-8 text-center">
-            <p class="text-[10px] font-bold text-slate-300 tracking-widest uppercase">Created by Maulana.Dev</p>
+        <div class="mt-12 text-center">
+            <div class="inline-flex items-center gap-2 bg-[#00473e] text-[#f2f7f5] px-4 py-2 rounded-full text-[10px] font-bold tracking-widest uppercase">
+                <span>Designed by Maulana.Dev</span>
+                <span class="w-2 h-2 bg-[#faae2b] rounded-full animate-pulse"></span>
+            </div>
         </div>
 
     </div>
