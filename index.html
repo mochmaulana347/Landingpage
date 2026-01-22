@@ -3,113 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Katalog Pro - Solusi UMKM Digital</title>
+    <title>Porto Maulana - Web Dev</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
-        .glass { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px); }
-        .product-card:hover { transform: translateY(-10px); transition: 0.3s; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .bg-grid { background-image: radial-gradient(#e5e7eb 1px, transparent 1px); background-size: 20px 20px; }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-900">
+<body class="bg-white text-slate-900 bg-grid">
 
-    <nav class="fixed top-0 w-full glass z-50 border-b border-slate-200 px-6 py-4 flex justify-between items-center">
-        <div class="font-extrabold text-2xl tracking-tighter text-blue-600">TOKO.KITA</div>
-        <div class="hidden md:flex gap-8 font-semibold text-sm">
-            <a href="#home" class="hover:text-blue-600">Beranda</a>
-            <a href="#produk" class="hover:text-blue-600">Katalog</a>
-            <a href="#testi" class="hover:text-blue-600">Testimoni</a>
+    <nav class="max-w-6xl mx-auto px-6 py-6 flex justify-between items-center">
+        <div class="text-xl font-black tracking-tighter">MAULANA<span class="text-blue-600 underline">.DEV</span></div>
+        <div class="flex gap-4">
+            <a href="https://wa.me/628123456789" class="bg-blue-600 text-white px-5 py-2 rounded-full font-bold text-sm shadow-lg shadow-blue-200">Hubungi Saya</a>
         </div>
-        <a href="https://wa.me/628123456789" class="bg-blue-600 text-white px-6 py-2 rounded-full font-bold text-sm">Hubungi Kami</a>
     </nav>
 
-    <section id="home" class="pt-40 pb-20 px-6 text-center">
-        <div class="max-w-4xl mx-auto">
-            <span class="bg-blue-100 text-blue-700 px-4 py-1 rounded-full text-xs font-bold uppercase">UMKM Digital Ready</span>
-            <h1 class="text-5xl md:text-7xl font-black mt-6 leading-tight tracking-tight">
-                Upgrade Usaha Kamu Ke <span class="text-blue-600">Level Pro.</span>
-            </h1>
-            <p class="mt-6 text-slate-500 text-lg max-w-2xl mx-auto">
-                Website katalog produk modern, cepat, dan otomatis kirim order ke WhatsApp. Bikin pelanggan makin percaya!
-            </p>
-            <div class="mt-10 flex flex-col md:flex-row gap-4 justify-center">
-                <a href="#produk" class="bg-slate-900 text-white px-10 py-4 rounded-2xl font-bold text-lg shadow-xl shadow-slate-200">Lihat Produk</a>
-                <a href="https://wa.me/628123456789" class="bg-white border-2 border-slate-200 px-10 py-4 rounded-2xl font-bold text-lg">Konsultasi Gratis</a>
+    <header class="max-w-6xl mx-auto px-6 pt-20 pb-10 text-center">
+        <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight leading-none mb-6">
+            Website Pro Untuk <br><span class="text-blue-600">UMKM Indonesia.</span>
+        </h1>
+        <p class="text-slate-500 text-lg max-w-xl mx-auto mb-10 font-medium">
+            Tampilan modern, mobile-friendly, dan fitur order otomatis ke WhatsApp. Solusi tepat buat naikin omset bisnis kamu.
+        </p>
+        
+        <div class="relative max-w-4xl mx-auto bg-slate-900 p-2 rounded-[2rem] shadow-2xl overflow-hidden border-8 border-slate-900">
+            <div class="bg-white rounded-[1.5rem] overflow-hidden aspect-video">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000" class="w-full h-full object-cover opacity-90" alt="demo">
             </div>
+            <div class="absolute bottom-6 left-6 bg-blue-600 text-white px-4 py-2 rounded-xl font-bold text-sm">
+                Next.js & React Ready 🚀
+            </div>
+        </div>
+    </header>
+
+    <section class="max-w-6xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="p-8 border border-slate-100 rounded-[2rem] bg-white shadow-sm">
+            <h3 class="font-black text-xl mb-2">Web Katalog</h3>
+            <p class="text-slate-500 text-sm">Pajang produk kamu dengan tampilan premium dan tombol order langsung ke WA admin.</p>
+        </div>
+        <div class="p-8 border border-slate-100 rounded-[2rem] bg-white shadow-sm">
+            <h3 class="font-black text-xl mb-2">Portfolio Online</h3>
+            <p class="text-slate-500 text-sm">Bikin CV atau hasil karya kamu jadi lebih keren dengan personal website yang kenceng.</p>
+        </div>
+        <div class="p-8 border border-slate-100 rounded-[2rem] bg-white shadow-sm">
+            <h3 class="font-black text-xl mb-2">App Android</h3>
+            <p class="text-slate-500 text-sm">Ubah website kamu jadi aplikasi Android (APK) yang bisa langsung instal di HP.</p>
         </div>
     </section>
 
-    <section id="produk" class="py-20 px-6 max-w-6xl mx-auto">
-        <div class="flex justify-between items-end mb-12">
-            <div>
-                <h2 class="text-3xl font-black italic">Produk Unggulan</h2>
-                <p class="text-slate-500">Koleksi terbaik yang paling dicari pelanggan.</p>
-            </div>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-            <div class="product-card bg-white p-4 rounded-[32px] shadow-sm border border-slate-100">
-                <div class="aspect-square bg-slate-200 rounded-[24px] mb-6 overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=500&q=80" alt="Produk" class="w-full h-full object-cover">
-                </div>
-                <div class="px-2">
-                    <h3 class="font-bold text-xl tracking-tight">Luxury Watch v1</h3>
-                    <p class="text-blue-600 font-black text-lg mt-1">Rp 1.250.000</p>
-                    <button onclick="orderWA('Luxury Watch v1')" class="w-full mt-6 bg-blue-600 text-white py-4 rounded-2xl font-bold hover:bg-blue-700 transition">
-                        Beli via WhatsApp
-                    </button>
-                </div>
-            </div>
-
-            <div class="product-card bg-white p-4 rounded-[32px] shadow-sm border border-slate-100">
-                <div class="aspect-square bg-slate-200 rounded-[24px] mb-6 overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=500&q=80" alt="Produk" class="w-full h-full object-cover">
-                </div>
-                <div class="px-2">
-                    <h3 class="font-bold text-xl tracking-tight">Wireless Headphone</h3>
-                    <p class="text-blue-600 font-black text-lg mt-1">Rp 850.000</p>
-                    <button onclick="orderWA('Wireless Headphone')" class="w-full mt-6 bg-blue-600 text-white py-4 rounded-2xl font-bold hover:bg-blue-700 transition">
-                        Beli via WhatsApp
-                    </button>
-                </div>
-            </div>
-
-            <div class="product-card bg-white p-4 rounded-[32px] shadow-sm border border-slate-100">
-                <div class="aspect-square bg-slate-200 rounded-[24px] mb-6 overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=500&q=80" alt="Produk" class="w-full h-full object-cover">
-                </div>
-                <div class="px-2">
-                    <h3 class="font-bold text-xl tracking-tight">Premium Sneakers</h3>
-                    <p class="text-blue-600 font-black text-lg mt-1">Rp 450.000</p>
-                    <button onclick="orderWA('Premium Sneakers')" class="w-full mt-6 bg-blue-600 text-white py-4 rounded-2xl font-bold hover:bg-blue-700 transition">
-                        Beli via WhatsApp
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="bg-slate-900 text-white py-20 px-6 text-center">
-        <div class="max-w-2xl mx-auto">
-            <h2 class="text-3xl font-bold mb-6">Siap Punya Website Sendiri?</h2>
-            <p class="text-slate-400 mb-10 text-sm">Dibuat khusus untuk membantu UMKM Indonesia Go Digital dengan biaya terjangkau dan pengerjaan cepat.</p>
-            <div class="flex justify-center gap-6 grayscale opacity-50 mb-10">
-                <p class="font-bold">Next.js</p>
-                <p class="font-bold">Tailwind</p>
-                <p class="font-bold">Vercel</p>
-            </div>
-            <p class="text-xs text-slate-500">© 2026 Maulana Dev. All rights reserved.</p>
-        </div>
+    <footer class="text-center py-20 border-t border-slate-100">
+        <p class="font-bold text-slate-400">MAULANA DEVELOPMENT © 2026</p>
     </footer>
 
-    <script>
-        function orderWA(produk) {
-            const noWA = "628123456789"; // GANTI DENGAN NOMOR WA KAMU/CLIENT
-            const pesan = `Halo Admin, saya mau pesan produk: *${produk}*. Apakah stok masih ada?`;
-            const url = `https://wa.me/${noWA}?text=${encodeURIComponent(pesan)}`;
-            window.open(url, '_blank');
-        }
-    </script>
 </body>
 </html>
