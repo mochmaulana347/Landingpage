@@ -3,94 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Katalog Demo - Virtue</title>
+    <title>Link Toko Pro - Virtue Dev</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #f8fafc; }
-        .product-card { transition: all 0.3s ease; }
-        .product-card:hover { transform: translateY(-8px); shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1); }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .btn-link { transition: all 0.2s ease-in-out; }
+        .btn-link:hover { transform: scale(1.02); }
     </style>
 </head>
-<body class="p-4 md:p-10">
+<body class="bg-[#F3F4F6] min-h-screen flex items-center justify-center p-4">
 
-    <div class="max-w-6xl mx-auto mb-10 flex justify-between items-end">
-        <div>
-            <span class="text-blue-600 font-bold text-sm uppercase tracking-widest">Kategori: Best Seller</span>
-            <h1 class="text-4xl font-black tracking-tight text-slate-900">Katalog Produk ✨</h1>
-        </div>
-        <div class="hidden md:block">
-            <div class="bg-white px-4 py-2 rounded-2xl border border-slate-200 font-bold text-sm shadow-sm">
-                3 Produk Tersedia
-            </div>
-        </div>
-    </div>
-
-    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div class="max-w-md w-full bg-white rounded-[3rem] shadow-2xl overflow-hidden border-[12px] border-white">
         
-        <div class="product-card bg-white rounded-[2.5rem] p-5 shadow-sm border border-slate-100">
-            <div class="aspect-square bg-slate-100 rounded-[2rem] mb-6 overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover" alt="Sepatu">
-            </div>
-            <div class="px-2">
-                <h3 class="text-xl font-extrabold text-slate-800">Nike Air Max Red</h3>
-                <p class="text-slate-500 text-sm mt-1">Sepatu lari kualitas premium, ringan dan nyaman.</p>
-                <div class="mt-6 flex justify-between items-center">
-                    <span class="text-2xl font-black text-blue-600">Rp 1.499.000</span>
-                    <button class="bg-slate-900 text-white p-3 rounded-xl hover:bg-blue-600 transition">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
-                            <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-                        </svg>
-                    </button>
+        <div class="relative h-40 bg-gradient-to-tr from-blue-600 to-indigo-500">
+            <div class="absolute -bottom-12 left-1/2 -translate-x-1/2">
+                <div class="w-24 h-24 bg-white rounded-full p-1 shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1541963463532-d68292c34b19?q=80&w=200&h=200&auto=format&fit=crop" class="w-full h-full rounded-full object-cover" alt="Logo Toko">
                 </div>
             </div>
         </div>
 
-        <div class="product-card bg-white rounded-[2.5rem] p-5 shadow-sm border border-slate-100">
-            <div class="aspect-square bg-slate-100 rounded-[2rem] mb-6 overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover" alt="Headphone">
-            </div>
-            <div class="px-2">
-                <h3 class="text-xl font-extrabold text-slate-800">Sony WH-1000XM4</h3>
-                <p class="text-slate-500 text-sm mt-1">Noise cancelling terbaik untuk pengalaman audio pro.</p>
-                <div class="mt-6 flex justify-between items-center">
-                    <span class="text-2xl font-black text-blue-600">Rp 3.250.000</span>
-                    <button class="bg-slate-900 text-white p-3 rounded-xl hover:bg-blue-600 transition">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
-                            <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-                        </svg>
-                    </button>
+        <div class="pt-16 pb-8 px-8 text-center">
+            <h1 class="text-2xl font-black tracking-tight text-slate-800">Toko Berkah Utama ✨</h1>
+            <p class="text-slate-500 text-sm mt-2 leading-relaxed font-medium">
+                Penyedia Perlengkapan Rumah Tangga Berkualitas. <br> Pilih platform belanja favorit kamu di bawah ini:
+            </p>
+        </div>
+
+        <div class="px-6 pb-10 space-y-4">
+            
+            <a href="#" class="btn-link flex items-center p-4 bg-[#EE4D2D] text-white rounded-2xl shadow-md hover:shadow-orange-200">
+                <div class="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center">
+                    <span class="font-bold">S</span>
                 </div>
-            </div>
-        </div>
-
-        <div class="product-card bg-white rounded-[2.5rem] p-5 shadow-sm border border-slate-100">
-            <div class="aspect-square bg-slate-100 rounded-[2rem] mb-6 overflow-hidden relative">
-                <div class="absolute top-4 right-4 bg-red-500 text-white px-3 py-1 rounded-full text-[10px] font-black italic shadow-lg">OFF 20%</div>
-                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover" alt="Jam">
-            </div>
-            <div class="px-2">
-                <h3 class="text-xl font-extrabold text-slate-800">Smartwatch Gen-5</h3>
-                <p class="text-slate-500 text-sm mt-1">Pantau kesehatan dan notifikasi dalam satu genggaman.</p>
-                <div class="mt-6 flex justify-between items-center">
-                    <span class="text-2xl font-black text-blue-600">Rp 899.000</span>
-                    <button class="bg-slate-900 text-white p-3 rounded-xl hover:bg-blue-600 transition">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
-                            <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-                        </svg>
-                    </button>
+                <div class="ml-4 text-left">
+                    <p class="font-extrabold text-sm leading-none">Shopee Indonesia</p>
+                    <p class="text-[10px] opacity-80 mt-1">Diskon s/d 50% & Gratis Ongkir</p>
                 </div>
-            </div>
+                <div class="ml-auto opacity-50">➜</div>
+            </a>
+
+            <a href="#" class="btn-link flex items-center p-4 bg-[#03AC0E] text-white rounded-2xl shadow-md hover:shadow-green-200">
+                <div class="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center">
+                    <span class="font-bold">T</span>
+                </div>
+                <div class="ml-4 text-left">
+                    <p class="font-extrabold text-sm leading-none">Tokopedia</p>
+                    <p class="text-[10px] opacity-80 mt-1">Cicilan 0% & Cashback Menarik</p>
+                </div>
+                <div class="ml-auto opacity-50">➜</div>
+            </a>
+
+            <a href="#" class="btn-link flex items-center p-4 bg-black text-white rounded-2xl shadow-md">
+                <div class="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center">
+                    <span class="font-bold italic">d</span>
+                </div>
+                <div class="ml-4 text-left">
+                    <p class="font-extrabold text-sm leading-none">TikTok Shop</p>
+                    <p class="text-[10px] opacity-80 mt-1">Cek Live Streaming Kami</p>
+                </div>
+                <div class="ml-auto opacity-50">➜</div>
+            </a>
+
+            <a href="#" class="btn-link flex items-center p-4 bg-white border-2 border-slate-100 text-slate-700 rounded-2xl shadow-sm hover:border-blue-500">
+                <div class="w-10 h-10 bg-green-50 rounded-xl flex items-center justify-center">
+                    <span class="text-green-600 font-bold">W</span>
+                </div>
+                <div class="ml-4 text-left">
+                    <p class="font-extrabold text-sm leading-none text-slate-800">WhatsApp Admin</p>
+                    <p class="text-[10px] text-slate-400 mt-1">Tanya stok & custom order</p>
+                </div>
+                <div class="ml-auto text-slate-300">➜</div>
+            </a>
+
         </div>
 
-    </div>
-
-    <div class="max-w-6xl mx-auto mt-16 p-8 bg-blue-600 rounded-[2.5rem] text-white flex flex-col md:flex-row justify-between items-center gap-6">
-        <div>
-            <h2 class="text-2xl font-extrabold">Mau katalog seperti ini?</h2>
-            <p class="opacity-80">Hubungi kami untuk pembuatan website katalog produk UMKM.</p>
+        <div class="pb-8 text-center">
+            <p class="text-[10px] font-bold text-slate-300 tracking-widest uppercase">Created by Maulana.Dev</p>
         </div>
-        <button class="bg-white text-blue-600 px-8 py-4 rounded-2xl font-black text-lg shadow-xl">ORDER SEKARANG</button>
+
     </div>
 
 </body>
